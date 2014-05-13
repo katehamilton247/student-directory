@@ -21,4 +21,4 @@ puts "Josh Fail-Brown"
 puts "Sasha Cooper"
 puts "Nicolai DTH"
 #finally we print the total
-print "Overall, we have #{student_count} great students."
+puts "Overall, we have #{student_count} great students."
