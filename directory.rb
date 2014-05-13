@@ -1,4 +1,4 @@
-puts "The students of my cohort at Makers Academy"
+puts"The students of my cohort at Makers Academy"
 puts"Nadav Matalon"
 puts"Fitsum Teklehaimanot"
 puts"Roi Driscoll"
