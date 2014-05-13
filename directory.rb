@@ -1,5 +1,3 @@
-student_count = 19
-
 students = [
 "Nadav Matalon",
 "Fitsum Teklehaimanot",
@@ -43,4 +41,4 @@ puts students[16]
 puts students[17]
 puts students[18]
 
-puts "Overall, we have #{student_count} great students."
+puts "Overall, we have #{students.length} great students."
