@@ -1,40 +1,38 @@
-students = [
-	{:name => "Nadav Matalon", :cohort => :May},
-	{:name => "Fitsum Teklehaimanot", :cohort => :May},
-	{:name => "Roi Driscoll", :cohort => :May},
-	{:name => "James Whyte", :cohort => :May},
-	{:name => "Margherita Serino", :cohort => :May},
-	{:name => "Vaidas Mykolaitis", :cohort => :May},
-	{:name => "Johann Bornman", :cohort => :May},
-	{:name => "Kate Hamilton", :cohort => :May},
-	{:name => "James Keap", :cohort => :May},
-	{:name => "Nic Yeeles", :cohort => :May},
-	{:name => "Julie Walker", :cohort => :May},
-	{:name => "Will Allen", :cohort => :May},
-	{:name => "Julia Tan", :cohort => :May},
-	{:name => "Federico Maffei", :cohort => :May},
-	{:name => "Jamie Patel", :cohort => :May},
-	{:name => "Faezrah Rizalman", :cohort => :May},
-	{:name => "Josh Fail-Brown", :cohort => :May},
-	{:name => "Sasha Cooper", :cohort => :May},
-	{:name => "Nicolai DTH", :cohort => :May}
-]
-
-def print_header
-	puts "The students of my cohort at Makers Academy"
-	puts "-------------------------------------------"
+def input_students
+	puts "Please enter the names of the students"
+	puts "To finish, just hit return twice"
+#create an empty array
+	students = []
+#get the first name
+	name = gets.chomp
+#while the name is not empty, repear this code
+	while !name.empty? do 
+		#add the student hash to the array
+		students << {:name => name, :cohort => :May}
+		puts "Now we have #{students.length} students"
+		#get another name from the user
+		name = gets.chomp
+	end
+	#return the array of students
+	students
 end
 
-def print(students)
-	students.each do |students|
-		puts "#{students[:name]} (#{students[:cohort1]} cohort)"
-	end
+def print_header
+  puts "The students of my cohort at Makers Academy"
+  puts "-------------"
+end
+
+def print(names)
+  names.each do |name|
+    puts name
+  end
 end
 
 def print_footer(names)
-	puts "Overall, we have #{names.length} great students."
-end
+  puts "Overall, we have #{names.length} great students"
+end 
 
+students = input_students
 print_header
 print(students)
 print_footer(students)
