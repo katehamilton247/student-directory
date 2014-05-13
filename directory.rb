@@ -1,23 +1,23 @@
 students = [
-"Nadav Matalon",
-"Fitsum Teklehaimanot",
-"Roi Driscoll",
-"James Whyte",
-"Margherita Serino",
-"Vaidas Mykolaitis",
-"Johann Bornman",
-"Kate Hamilton",
-"James Keap",
-"Nic Yeeles",
-"Julie Walker",
-"Will Allen",
-"Julia Tan",
-"Federico Maffei",
-"Jamie Patel",
-"Faezrah Rizalman",
-"Josh Fail-Brown",
-"Sasha Cooper",
-"Nicolai DTH"
+	"Nadav Matalon",
+	"Fitsum Teklehaimanot",
+	"Roi Driscoll",
+	"James Whyte",
+	"Margherita Serino",
+	"Vaidas Mykolaitis",
+	"Johann Bornman",
+	"Kate Hamilton",
+	"James Keap",
+	"Nic Yeeles",
+	"Julie Walker",
+	"Will Allen",
+	"Julia Tan",
+	"Federico Maffei",
+	"Jamie Patel",
+	"Faezrah Rizalman",
+	"Josh Fail-Brown",
+	"Sasha Cooper",
+	"Nicolai DTH"
 ]
 
 def print_header
@@ -32,7 +32,7 @@ def print(names)
 end
 
 def print_footer(names)
-	puts "Overall, we have #{students.length} great students."
+	puts "Overall, we have #{names.length} great students."
 end
 
 print_header
