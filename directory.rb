@@ -1,23 +1,23 @@
 students = [
-	"Nadav Matalon",
-	"Fitsum Teklehaimanot",
-	"Roi Driscoll",
-	"James Whyte",
-	"Margherita Serino",
-	"Vaidas Mykolaitis",
-	"Johann Bornman",
-	"Kate Hamilton",
-	"James Keap",
-	"Nic Yeeles",
-	"Julie Walker",
-	"Will Allen",
-	"Julia Tan",
-	"Federico Maffei",
-	"Jamie Patel",
-	"Faezrah Rizalman",
-	"Josh Fail-Brown",
-	"Sasha Cooper",
-	"Nicolai DTH"
+	{:name => "Nadav Matalon", :cohort => :May],
+	{:name => "Fitsum Teklehaimanot", :cohort => :May],
+	{:name => "Roi Driscoll", :cohort => :May],
+	{:name => "James Whyte", :cohort => :May],
+	{:name => "Margherita Serino", :cohort => :May],
+	{:name => "Vaidas Mykolaitis", :cohort => :May],
+	{:name => "Johann Bornman", :cohort => :May],
+	{:name => "Kate Hamilton", :cohort => :May],
+	{:name => "James Keap", :cohort => :May],
+	{:name => "Nic Yeeles", :cohort => :May],
+	{:name => "Julie Walker", :cohort => :May],
+	{:name => "Will Allen", :cohort => :May],
+	{:name => "Julia Tan", :cohort => :May],
+	{:name => "Federico Maffei", :cohort => :May],
+	{:name => "Jamie Patel", :cohort => :May],
+	{:name => "Faezrah Rizalman", :cohort => :May],
+	{:name => "Josh Fail-Brown", :cohort => :May],
+	{:name => "Sasha Cooper", :cohort => :May],
+	{:name => "Nicolai DTH", :cohort => :May]
 ]
 
 def print_header
@@ -25,9 +25,9 @@ def print_header
 	puts "-------------------------------------------"
 end
 
-def print(names)
-	names.each do |names|
-		puts names
+def print(students)
+	students.each do |students|
+		puts "#{students[:name]} (#{students[:cohort1]} cohort)"
 	end
 end
 
