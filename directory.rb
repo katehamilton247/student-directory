@@ -1,4 +1,4 @@
-print "The students of my cohort at Makers Academy\n-------------------------------------------"
+print "The students of my cohort at Makers Academy\n-------------------------------------------\n"
 puts "Nadav Matalon"
 puts "Fitsum Teklehaimanot"
 puts "Roi Driscoll"
