@@ -22,13 +22,13 @@ def print_header
   puts "-------------"
 end
 
-def print(name)
+def print(names)
   name.each do |name|
     puts name
   end
 end
 
-def print_footer(name)
+def print_footer(names)
   puts "Overall, we have #{names.length} great students"
 end 
 
