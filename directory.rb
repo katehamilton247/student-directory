@@ -23,7 +23,7 @@ def print_header
 end
 
 def print(names)
-  name.each do |name|
+  names.each do |name|
     puts name
   end
 end
