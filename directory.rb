@@ -23,13 +23,13 @@ def print_header
 end
 
 def print(students)
-  students.each do |students|
-    puts "#{students{:name}} (#{students[:cohort]} cohort)"
+  students.each do |student|
+    puts "#{student{:name}} (#{student[:cohort]} cohort)"
   end
 end
 
-def print_footer(students)
-  puts "Overall, we have #{students.length} great students"
+def print_footer(names)
+  puts "Overall, we have #{names.length} great students"
 end 
 
 students = input_students
